@@ -20,6 +20,18 @@ export default function AppJs() {
 				},
 				createElement('img', {
 					src: viteLogo,
+					className: 'logo',
+					alt: 'Vite logo',
+				}),
+			),
+			createElement(
+				'a',
+				{
+					href: 'https://react.dev',
+					target: '_blank',
+				},
+				createElement('img', {
+					src: reactLogo,
 					className: 'logo react',
 					alt: 'React logo',
 				}),
@@ -47,11 +59,6 @@ export default function AppJs() {
 			},
 			'Click on the Vite and React logos to learn more',
 		),
-		createElement(
-			'p',
-			null,
-			`Текущий год ${new Date().getFullYear()}`
-
-		),
+		createElement('p', null, `Текущий год ${new Date().getFullYear()}`),
 	);
 }
